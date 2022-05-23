@@ -36,10 +36,14 @@ function buscarFilme(cod){
     return "[ERRO] Filme não cadastrado"
 }
 
-console.log(buscarFilme(33))
+//console.log(buscarFilme(42))
 
-/*function alterarStatusEmCartaz(true){
-
+function alterarStatusEmCartaz(cod){
+    for(let i = 0; i < catalogo.length; i++){
+        if(catalogo[i].codigo === cod){
+            return !catalogo[i].emCartaz
+        }
+    }
 }
 
-buscarFilme(42)*/
+//console.log(alterarStatusEmCartaz(221))
