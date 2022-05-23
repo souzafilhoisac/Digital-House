@@ -21,19 +21,24 @@ let catalogo = [
     }
 ]
 
-console.log(catalogo.codigo)
+//console.log(catalogo.codigo)
 
 /*function adicionarFilmes(codigo, filme, duracao, atores, anoLancamento, emCartaz){
     catalogo.push()
-}
+}*/
 
-function buscarFilme(codigo){
-    if(catalogo.codigo) {
-        console.log(catalogo.titulo)
+function buscarFilme(cod){
+    for(let i = 0; i < catalogo.length; i++){
+        if(catalogo[i].codigo === cod){
+            return catalogo[i].titulo
+        }
     }
+    return "[ERRO] Filme não cadastrado"
 }
 
-function alterarStatusEmCartaz(){
+console.log(buscarFilme(33))
+
+/*function alterarStatusEmCartaz(true){
 
 }
 
