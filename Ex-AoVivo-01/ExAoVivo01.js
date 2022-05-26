@@ -15,7 +15,7 @@ console.log(`O seu veículo percorreu um total de ${conversorDeMilhas.toFixed(2)
 let nomeDoUsuario = "João";
 let idadeDoUsuario = 20;
 let anoAtual = 2022;
-let saudacao = `Olá ${nomeDoUsuario}, você nasceu em ${anoAtual - idadeDoUsuario}`
+let saudacao = `Olá ${nomeDoUsuario}, você nasceu em ${anoAtual - idadeDoUsuario}.`
 
 console.log(saudacao)
 
