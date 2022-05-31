@@ -28,6 +28,7 @@ console.log(frase.split("o"))
 
 //replace
 //substitui caracteres de acordo os parametros passados
+//ele só substitui a primeira ocorrência
 
 let newText = frase.replace('js','html')
 console.log(newText)
