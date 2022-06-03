@@ -31,7 +31,7 @@ function adicionaUmNovoFilmePeloSeuNome(nomeDoFilme) {
 //adicionaUmNovoFilmePeloSeuNome('Homem aranha')
 
 // 1.5. Atualiza um filme a partir do seu índice na lista.
-function atualizarUmFilmePeloSeuIndice(indiceDoFilme,novoFilme) {
+function atualizarUmFilmePeloSeuIndice(indiceDoFilme, novoFilme) {
     listaDeFilmes[indiceDoFilme] = novoFilme;
     console.log(listaDeFilmes);
 }
@@ -40,7 +40,7 @@ function atualizarUmFilmePeloSeuIndice(indiceDoFilme,novoFilme) {
 
 // 1.6. Listar todos os filmes com seu índice/posição na lista.
 listaDeFilmes.forEach(function(nomeDoFilme, indiceDoFilme){
-    console.log(`${indiceDoFilme} ${nomeDoFilme}`)
+    console.log(`${indiceDoFilme} - ${nomeDoFilme}`)
 })
 
 // 1.7. Listar filmes por quantidade.
