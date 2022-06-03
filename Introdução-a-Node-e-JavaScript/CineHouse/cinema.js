@@ -1,25 +1,9 @@
-let cinema = "CineHouse"
+const catalogo = require('./database/catalogo.json')
 
-//console.log(cinema)
-//Array com objetos
-let catalogo = [
-    {
-        codigo: 221,
-        titulo: 'Sherlock Holmes',
-        duracao: 2,
-        atores: ["Robert Downey Jr", "Jude Law", "Rachel McAdms"],
-        anoLancamento: 2009,
-        emCartaz: false
-    },
-    {
-        codigo: 42,
-        titulo: 'Doutor Estranho no Multiverso da Loucura',
-        duracao: 2,
-        atores: ["Elizabeth Olsen", "Xochitl Gomez", "Benedict Cumberbatch"],
-        anoLancamento: 2022,
-        emCartaz: true
-    }
-]
+let objeto = JSON.stringify(catalogo);
+//console.log(objeto)
+
+let cinema = "CineHouse";
 
 //catalogo.push({'codigo':null, 'titulo':null, 'duracao':null, 'atores':[null], 'anoLancamento':null, 'emCartaz':null})
 //console.log(catalogo)
@@ -52,7 +36,7 @@ function buscarFilme(cod){
     return "[ERRO] Filme não cadastrado"
 }
 
-//console.log(buscarFilme(42))
+console.log(buscarFilme(42))
 
 //Função que altera o status (em cartaz) de acordo o código do filme buscado.
 
