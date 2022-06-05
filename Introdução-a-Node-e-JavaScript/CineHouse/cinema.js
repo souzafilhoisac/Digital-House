@@ -20,7 +20,7 @@ function adicionarFilmes(codigo, titulo, duracao, atores = [], anoLancamento, em
     }
     catalogo.push({codigo, titulo, duracao, atores, anoLancamento, emCartaz})
     console.log("Filme cadastrado com sucesso!")
-    return catalogo
+    return catalogo;
 }
 
 //console.log(adicionarFilmes(25, "Homem Aranha", 2, ["Tobey Maguire", "Kirsten Dunst", "Willem Dafoe"], 2002, false))
@@ -30,22 +30,28 @@ function adicionarFilmes(codigo, titulo, duracao, atores = [], anoLancamento, em
 function buscarFilme(cod){
     for(let i = 0; i < catalogo.length; i++){
         if(catalogo[i].codigo === cod){
-            return catalogo[i].titulo
+            return `Com o código "${cod}", encontramos o filme "${catalogo[i].titulo}".`;
         }
     }
     return "[ERRO] Filme não cadastrado"
 }
 
-console.log(buscarFilme(42))
+//console.log(buscarFilme(42))
 
 //Função que altera o status (em cartaz) de acordo o código do filme buscado.
 
-function alterarStatusEmCartaz(cod){
-    for(let i = 0; i < catalogo.length; i++){
-        if(catalogo[i].codigo === cod){
-            return !catalogo[i].emCartaz
-        }
+function alterarStatusEmCartaz(cod, operadorCallback){
+    catalogo.forEach(function(cod){
+        operadorCallback(cod);
+    });
+    catalogo.emCartaz = !catalogo.emCartaz;
+
+    
+    if(!catalogo.emCartaz){
+        return `O filme ${catalogo.titulo} não está em cartaz`;
+    } else {
+        return `O filme ${catalogo.titulo} está em cartaz`;
     }
 }
 
-//console.log(alterarStatusEmCartaz(221))
+console.log(alterarStatusEmCartaz(221,buscarFilme))
