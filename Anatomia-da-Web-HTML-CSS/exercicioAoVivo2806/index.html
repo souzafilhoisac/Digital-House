@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício do dia 28-06-22</title>
+</head>
+<body>
+    <article>
+        <h1>Área de acesso</h1>
+        <form 
+        action="./servidor/index.html"
+        name="areaAcesso"
+        method="get"
+        >
+            <fieldset>
+                <legend>Área de acesso</legend>
+                <div>
+                    <label for="email">Email*:</label>
+                    <input type="text" placeholder="Digite seu email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="email">Password*:</label>
+                    <input type="text" placeholder="Digite sua senha" name="password" id="password" required>
+                </div>
+                <div>
+                    <label for="rememberMe">Lembrar seus dados*:</label>
+                    <input type="checkbox" name="rememberMe" id="rememberMe" value="rememberMe"> Lembrar meus dados
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </article>
+</body>
+</html>
