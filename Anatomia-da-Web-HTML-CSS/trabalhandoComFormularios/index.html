@@ -11,13 +11,13 @@
     <form>
         <!-- O label linka com o input através dos campos "for" e "id" -->
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
         <br>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
+        <input type="email" name="email" id="email" placeholder="email@example.com" required>
         <br>
         <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
         <br><br>
         <label>Você já foi ao cinema esse ano?</label>
         <br>
@@ -35,10 +35,25 @@
         <input type="checkbox" name="genero" id="drama" value="drama"><label for="drama">Drama</label>
         <br>
         <input type="checkbox" name="genero" id="acao" value="acao"><label for="acao">Ação</label>
+        <br>
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option selected disabled>Selecione</option>
+            <option value="BRA">Brasil</option>
+            <option value="ARG">Argentina</option>
+            <option value="URU">Uruguai</option>
+
+        </select>
+        <br>
+        <label for="mensagem">Mensagem</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
 
         <br>
         <br>
         <!-- Botão para enviar o formulário -->
+        <button type="button">Teste</button>
+        <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
     </form>
 </body>
