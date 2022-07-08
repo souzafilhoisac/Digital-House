@@ -18,8 +18,27 @@
         <br>
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        <br><br>
+        <label>Você já foi ao cinema esse ano?</label>
+        <br>
+        <!-- Importante notar que o atributo name neste caso faz com que o input se identifique no mesmo contexto, assim só se pode marcar um -->
+        <input type="radio" name="cinema" id="sim" value="sim" checked><label for="sim">Sim</label>
+        <br>
+        <!-- O for utilizado no label ao lado, permitirá que o usuario clique no circulo ou na palavra para poder selecionar o campo. -->
+        <input type="radio" name="cinema" id="nao" value="nao"><label for="nao">Não</label>
+        <br>
+        <label for="genero">Qual o seu gênero de cinema favorito?</label>
+        <br>
+        <!-- Já no checkbox o atributo name faz com que o input se identifique no mesmo contexto, podendo agrupá-los-->
+        <input type="checkbox" name="genero" id="terror" value="terror" checked><label for="terror">Terror</label>
+        <br>
+        <input type="checkbox" name="genero" id="drama" value="drama"><label for="drama">Drama</label>
+        <br>
+        <input type="checkbox" name="genero" id="acao" value="acao"><label for="acao">Ação</label>
+
         <br>
         <br>
+        <!-- Botão para enviar o formulário -->
         <button type="submit">Enviar</button>
     </form>
 </body>
