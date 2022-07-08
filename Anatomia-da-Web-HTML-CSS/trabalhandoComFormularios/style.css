@@ -1,0 +1,26 @@
+Body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pseudo-seletores */
+
+input {
+    border-color: blue;
+}
+
+
+input:hover {
+    border-color: orangered;
+}
+
+input:focus {
+    width: 400px;
+}
+
+p:hover {
+    color: orangered;
+}
+
+p:nth-child(even) {
+    background-color: gray;
+}
