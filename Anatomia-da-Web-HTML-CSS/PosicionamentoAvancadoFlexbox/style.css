@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Indie+Flower&family=Passion+One:wght@400;700;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(202, 200, 200);
+    font-family: "Roboto mono", Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199);
+}
+
+header > h1 {
+    font-size: 2rem;
+    color: rgb(88, 88, 88);
+    width: 90px;
+}
+
+header > p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+    width: 80px;
+}
+
+.menu {
+    height: 0.5vh;
+    width: 10vh;
+    border: solid 2px gray;
+    margin: 5px;
+    position: relative;
+}
+
+main {
+    background-color: white;
+}
+
+#l-imageL {
+    background-image: url('firstimage.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+
+#container {
+    margin: 20px 0px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#l-imageM1 {
+    max-height: 30vh;
+    max-width: 30vh;
+}
+
+#l-imageM2 {
+    max-height: 30vh;
+    max-width: 30vh;
+}
+
+.sub-container {
+    max-width: 32vh;
+    font-size: 0.5rem;
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+}
+
+#l-imageP1 {
+    background-image: url('imagep1.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12vh;
+    margin: 10px 0;
+}
+
+#l-imageP2 {
+    background-image: url('imagep2.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12vh;
+    margin: 10px 0;
+}
+
+#l-imageP3 {
+    background-image: url('imagep3.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12vh;
+    margin: 10px 0;
+}
+
+section > div > h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+}
+
+section > div > #l-banner {
+    color: rgb(87, 87, 87);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.6rem;
+    width: 25vh;
+}
