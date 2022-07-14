@@ -7,12 +7,15 @@
 }
 
 body {
-    border: solid 3px red;
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.253);
     font-family: "Roboto mono", Arial, Helvetica, sans-serif;
     margin: auto;
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
+}
+
+#shape {
+    background-color: white;
 }
 
 header {
@@ -21,21 +24,23 @@ header {
     margin-bottom: 10px;
     display: flex;
     position: relative;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 3px 5px rgba(128, 128, 128, 0.295);
 }
 
 header > h1 {
-    font-size: 2rem;
-    color: rgb(88, 88, 88);
-    width: 90px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgba(88, 88, 88, 0.767);
+    width: 125px;
     margin: 10px;
+    padding-right: 10px;
 }
 
 header > p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    color: rgb(88, 88, 88);
-    width: 80px;
+    color: rgba(88, 88, 88, 0.637);
+    width: 120px;
     align-self: center;
 }
 
@@ -51,9 +56,10 @@ header ul {
 }
 
 .menu {
-    width: 40px;
-    border: solid 2px gray;
-    margin: 5px;
+    width: 30px;
+    border: solid 1.5px rgb(179, 179, 179);
+    background-color: rgb(179, 179, 179);
+    margin: 3px;
     position: relative;
     flex-wrap: wrap;
 }
@@ -71,10 +77,6 @@ main {
 }
 
 #l-imageL {
-    background-image: url('firstimage.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 80vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -101,7 +103,7 @@ main {
 .sub-container {
     background-color: rgba(156, 154, 154, 0.336);
     color: rgba(68, 67, 67, 0.952);
-    max-width: 47vh;
+    max-width: 50vh;
     font-size: 0.6rem;
     display: inline-block;
     margin: auto;
@@ -182,34 +184,53 @@ footer {
     padding: 20px;
     display: flex;
     position: relative;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 #location {
-    width: 30vw;
+    height: 30vh;
+    max-width: 50%;
+    border-radius: 24px;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
 }
 
-#text-location {
-    height: 20vh;
-    width: 50vw;
+#footer-position {
+    min-width: 50%;
     display: flex;
     position: relative;
     flex-direction: row-reverse;
 }
 
-#logo {
-    height: 3vh;
-    width: 6vw;
+#location > img {
     display: flex;
     position: relative;
-    gap: 10px;
+    width: 100%;
+}
+
+#text-location {
+    height: 25vh;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 200px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 20px;
 }
 
 footer p {
     font-size: 0.6rem;
-    width: 25vh;
-    line-height: 1.2rem;
+    display: flex;
+}
+
+#logo img {
+    max-height: 4vh;
+    max-width: 4vw;
 }
