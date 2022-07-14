@@ -137,7 +137,7 @@ section#l-containerimage > div {
 }
 
 #l-imageP1 {
-    background-image: url('imagep1.jpg');
+    background-image: url('../../imagens/imagep1.jpg');
     background-size: 100%;
     background-position: center;
     height: 12vh;
@@ -148,7 +148,7 @@ section#l-containerimage > div {
 }
 
 #l-imageP2 {
-    background-image: url('imagep2.jpg');
+    background-image: url('../../imagens/imagep2.jpg');
     background-size: 100%;
     background-position: center;
     height: 12vh;
@@ -157,7 +157,7 @@ section#l-containerimage > div {
 }
 
 #l-imageP3 {
-    background-image: url('imagep3.jpg');
+    background-image: url('../../imagens/imagep3.jpg');
     background-size: 100%;
     background-position: center;
     height: 12vh;
