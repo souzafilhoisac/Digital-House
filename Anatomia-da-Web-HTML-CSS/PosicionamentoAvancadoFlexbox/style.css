@@ -2,27 +2,33 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    background-color: rgb(202, 200, 200);
+    border: solid 3px red;
+    background-color: white;
     font-family: "Roboto mono", Arial, Helvetica, sans-serif;
-    margin: 10px auto;
-    max-width: 500px;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
 }
 
 header {
     background-color: white;
+    padding: 10px 40px;
+    margin-bottom: 10px;
     display: flex;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199);
+    position: relative;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.315);
 }
 
 header > h1 {
     font-size: 2rem;
     color: rgb(88, 88, 88);
     width: 90px;
+    margin: 10px;
 }
 
 header > p {
@@ -30,26 +36,48 @@ header > p {
     font-weight: bold;
     color: rgb(88, 88, 88);
     width: 80px;
+    align-self: center;
+}
+
+header ul {
+    width: 90%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+
 }
 
 .menu {
-    height: 0.5vh;
-    width: 10vh;
+    width: 40px;
     border: solid 2px gray;
     margin: 5px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 main {
     background-color: white;
 }
 
+#principal {
+    width: 90%;
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+
 #l-imageL {
     background-image: url('firstimage.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 80vh;
     width: 100%;
+    display: flex;
+    position: relative;
 }
 
 #container {
@@ -61,38 +89,68 @@ main {
 }
 
 #l-imageM1 {
-    max-height: 30vh;
-    max-width: 30vh;
+    height: 30vh;
+    width: 100%;
 }
 
 #l-imageM2 {
-    max-height: 30vh;
-    max-width: 30vh;
+    height: 30vh;
+    width: 100%;
 }
 
 .sub-container {
-    max-width: 32vh;
-    font-size: 0.5rem;
+    background-color: rgba(156, 154, 154, 0.336);
+    color: rgba(68, 67, 67, 0.952);
+    max-width: 47vh;
+    font-size: 0.6rem;
     display: inline-block;
     margin: auto;
+}
+
+.sub-container p {
     padding: 5px;
+    text-align: justify;
+}
+
+.sub-container h3 {
+    font-size: 1rem;
+    padding: 5px;
+    text-align: justify;
+}
+
+#l-banner{
+    margin: 24px 0px;
+}
+
+#option {
+    padding: 10px 40px 50px 40px;
+}
+
+section#l-containerimage > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #l-imageP1 {
     background-image: url('imagep1.jpg');
     background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     height: 12vh;
-    margin: 10px 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: relative;
 }
 
 #l-imageP2 {
     background-image: url('imagep2.jpg');
     background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     height: 12vh;
+    width: 100%;
     margin: 10px 0;
 }
 
@@ -100,9 +158,9 @@ main {
     background-image: url('imagep3.jpg');
     background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     height: 12vh;
-    margin: 10px 0;
+    width: 100%;
+    margin: 10px 0px;
 }
 
 section > div > h2 {
@@ -110,7 +168,8 @@ section > div > h2 {
     font-weight: normal;
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+    display: flex;
 }
 
 section > div > #l-banner {
@@ -121,9 +180,36 @@ footer {
     background-color: rgba(0, 0, 0, 0.822);
     color: white;
     padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#location {
+    width: 30vw;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#text-location {
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+#logo {
+    height: 3vh;
+    width: 6vw;
+    display: flex;
+    position: relative;
+    gap: 10px;
 }
 
 footer p {
     font-size: 0.6rem;
     width: 25vh;
+    line-height: 1.2rem;
 }
