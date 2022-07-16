@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -11,17 +12,10 @@ body {
 }
 
 #principal {
-    height: 100vh;
+    background-color: white;
+    height: 100%;
     max-width: 800px;
-    margin: 10px auto;
-    background-color: white;
-}
-
-header {
-    background-color: white;
-    height: auto;
-    width: 100%;
-    display: flex;
+    margin: auto;
 }
 
 nav {
@@ -31,12 +25,17 @@ nav {
     position: relative;
 }
 
-#logo {
+#logo-top {
     height: 10vh;
     width: 25%;
     margin-left: 10px;
     display: flex;
     position: relative;
+}
+
+img {
+    height: auto;
+    width: 100%;
 }
 
 #menu {
@@ -47,107 +46,62 @@ nav {
     flex-direction: row-reverse;
 }
 
-li {
+#menu li {
     height: 50%;
     width: auto;
     display: inline-block;
     flex-direction: row-reverse;
     margin: 25px 25px 0px 0px;
     color: gray;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-size: .8rem;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
 }
 
-main {
-    background-color: white;
+#top {
     height: auto;
     width: 100%;
     display: flex;
     position: relative;
     flex-wrap: wrap;
-}
-
-#first-article {
-    background-color: white;
-    display: flex;
-    position: relative;
-    margin: 0px 0px 70px 0px;
-}
-
-#banner > img {
-    height: auto;
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-
-article#top {
-    background-color: white;
-    height: auto;
-    width: 100%;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-}
-
-.top-title {
-    height: auto;
-    width: 100%;
+    justify-content: center;
+    gap: 25px;
 }
 
 h1 {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    width: 100%;
     font-size: 1.8rem;
     font-weight: 800;
     text-align: center;
     margin: 40px auto;
 }
 
-#top-images {
+.top-image {
     height: auto;
-    width: 100%;
+    max-width: 35%;
     display: flex;
     position: relative;
     align-items: center;
-    gap: 30px;
-}
-
-#small-image {
-    height: 50vh;
-    width: auto;
-    margin: 0px 0px 0px auto;
-}
-
-#large-image {
-    height: 60vh;
-    width: auto;
-    margin: 0px auto 0px 0px;
 }
 
 aside {
     height: auto;
     width: 100%;
-    margin: 20px 0px 20px 0px;
-    display: flex;
-    position: relative;
+    margin: 60px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     flex-wrap: wrap;
     background-color: rgb(194, 24, 91);
 }
 
-.top-title {
+h2 {
+    background-color: rgb(194, 24, 91);
+    color: white;
     height: auto;
     width: 100%;
-}
-
-h2 {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    color: white;
+    padding-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
-    margin: 20px auto 30px auto;
 }
 
 #image-off {
@@ -162,8 +116,7 @@ h2 {
 
 #image-off p {
     background-color: white;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-size: .5rem;
+    font-size: .6rem;
     font-weight: 600;
     text-transform: uppercase;
     height: 7vh;
@@ -171,38 +124,15 @@ h2 {
     padding: 8px 5px;
 }
 
-.shoes1 {
+.shoes-off {
     height: 25vh;
     width: 100%;
-    display: flex;
-    position: relative;
-}
-
-.shoes2 {
-    height: 25vh;
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-
-.shoes3 {
-    height: 25vh;
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-
-.shoes4 {
-    height: 25vh;
-    width: 100%;
-    display: flex;
-    position: relative;
 }
 
 article#bottom {
-    background-color: white;
     height: 80vh;
     width: 100%;
+    margin: 40px 0;
     display: flex;
     position: relative;
 }
@@ -212,31 +142,74 @@ article#bottom {
     width: 100%;
     display: flex;
     position: relative;
+    gap: 20px;
+    justify-content: center;
 }
 
-#half-image {
+.half-image {
     height: auto;
-    width: 40%;
+    max-width: 40%;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-#full-image {
+h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.details {
+    min-height: 40px;
+    width: 70%;
+    margin: auto 0px;
+    background-color: rgb(194, 24, 91);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.full-image {
     height: auto;
-    width: 30%;
+    max-width: 50%;
     display: flex;
     position: relative;
 }
 
 footer {
-    height: 20vh;
+    font-size: .6rem;
+    font-weight: 400;
+    height: auto;
     width: 100%;
     display: flex;
     position: relative;
     background-color: rgb(194, 24, 91);
 }
 
-/* continuar o posicionamento das imagens do ultimo article e do footer */
+#logo-bottom {
+    background-color: rgb(194, 24, 91);
+    color: white;
+    height: auto;
+    width: 45%;
+    margin: 5px 0px 20px 60px;
+    flex-wrap: wrap;
+}
 
-/* encurtar o código, tratar os elementos com classe e não necessariamente individualmente */
+#footer-list {
+    height: auto;
+    width: 100%;
+    margin-left: 15vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 7vw;
+    line-height: .8rem;
+}
+
+footer ul {
+    background-color: rgb(194, 24, 91);
+    color: white;
+    list-style-type: none;
+}
