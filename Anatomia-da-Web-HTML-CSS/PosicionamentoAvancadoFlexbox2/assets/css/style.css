@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    border: solid 1px black;
+    background-color: white;
     height: auto;
     width: 100%;
     display: flex;
@@ -61,7 +61,182 @@ li {
     text-align: center;
 }
 
-#banner > img{
+main {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#first-article {
+    background-color: white;
+    display: flex;
+    position: relative;
+    margin: 0px 0px 70px 0px;
+}
+
+#banner > img {
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+article#top {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.top-title {
     height: auto;
     width: 100%;
 }
+
+h1 {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px auto;
+}
+
+#top-images {
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 30px;
+}
+
+#small-image {
+    height: 50vh;
+    width: auto;
+    margin: 0px 0px 0px auto;
+}
+
+#large-image {
+    height: 60vh;
+    width: auto;
+    margin: 0px auto 0px 0px;
+}
+
+aside {
+    height: auto;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: rgb(194, 24, 91);
+}
+
+.top-title {
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+
+#image-off {
+    height: auto;
+    width: 90%;
+    margin: 0px auto 40px auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+}
+
+#image-off p {
+    background-color: white;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: .5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 7vh;
+    width: auto;
+    padding: 8px 5px;
+}
+
+.shoes1 {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.shoes2 {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.shoes3 {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.shoes4 {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+article#bottom {
+    background-color: white;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#bottom-images {
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#half-image {
+    height: auto;
+    width: 40%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#full-image {
+    height: auto;
+    width: 30%;
+    display: flex;
+    position: relative;
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: rgb(194, 24, 91);
+}
+
+/* continuar o posicionamento das imagens do ultimo article e do footer */
+
+/* encurtar o código, tratar os elementos com classe e não necessariamente individualmente */
