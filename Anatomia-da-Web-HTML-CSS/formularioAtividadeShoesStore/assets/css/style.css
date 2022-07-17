@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.247);
+    height: auto;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    border: solid 1px black;
+    background-color: white;
+}
+
+#principal {
+    background-color: white;
+    height: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#logo-top {
+    height: 10vh;
+    width: 25%;
+    margin-left: 10px;
+    display: flex;
+    position: relative;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+#menu {
+    height: auto;
+    width: 75%;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+#menu li {
+    height: 50%;
+    width: auto;
+    display: inline-block;
+    flex-direction: row-reverse;
+    margin: 25px 25px 0px 0px;
+    color: gray;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    border: solid 1px black;
+    height: auto;
+    width: 100%;
+}
+
+#form-container {
+    border: solid 1px black;
+    height: 40vh;
+    width: 48%;
+    display: inline-block;
+    position: relative;
+}
+
+#text-container {
+    border: solid 1px black;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 48%;
+    text-align: left;
+}
+
+#text-container > p{
+    color: rgb(75, 74, 74);
+    margin-bottom: 10px;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+footer {
+    font-size: .6rem;
+    font-weight: 400;
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: rgb(194, 24, 91);
+}
+
+#logo-bottom {
+    background-color: rgb(194, 24, 91);
+    color: white;
+    height: auto;
+    width: 45%;
+    margin: 5px 0px 20px 60px;
+    flex-wrap: wrap;
+}
+
+#footer-list {
+    height: auto;
+    width: 100%;
+    margin-left: 15vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 7vw;
+    line-height: .8rem;
+}
+
+footer ul {
+    background-color: rgb(194, 24, 91);
+    color: white;
+    list-style-type: none;
+}
