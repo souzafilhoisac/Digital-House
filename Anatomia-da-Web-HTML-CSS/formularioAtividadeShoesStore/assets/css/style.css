@@ -69,7 +69,6 @@ img {
 
 main {
     background-color: white;
-    display: inline-block;
     position: relative;
     text-align: center;
 }
@@ -82,18 +81,24 @@ h1 {
 
 #form-container {
     border: solid 1px black;
-    height: 40vh;
-    width: 48%;
+    height: auto;
+    width: 58%;
     display: inline-block;
-    position: relative;
+}
+
+form {
+    display: inline-block;
+}
+
+label {
+    text-align: left;
 }
 
 #text-container {
     border: solid 1px black;
     display: inline-block;
-    position: relative;
     height: auto;
-    width: 48%;
+    width: 38%;
     text-align: left;
 }
 
