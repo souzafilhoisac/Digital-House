@@ -15,7 +15,6 @@ body {
 }
 
 header {
-    border: solid 1px black;
     background-color: white;
 }
 
@@ -27,6 +26,7 @@ header {
 }
 
 nav {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.178);
     height: 100%;
     width: 100%;
     display: flex;
@@ -34,7 +34,7 @@ nav {
 }
 
 #logo-top {
-    height: 10vh;
+    height: 13vh;
     width: 25%;
     margin-left: 10px;
     display: flex;
@@ -43,7 +43,7 @@ nav {
 
 img {
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 #menu {
@@ -69,34 +69,114 @@ img {
 
 main {
     background-color: white;
-    position: relative;
-    text-align: center;
 }
 
 h1 {
-    border: solid 1px black;
-    height: auto;
+    color: rgb(77, 77, 77);
+    font-size: 1.6rem;
+    font-weight: 500;
     width: 100%;
+    padding: 30px 40px 10px;
 }
 
-#form-container {
-    border: solid 1px black;
-    height: auto;
-    width: 58%;
-    display: inline-block;
+article {
+    color: gray;
+    display: flex;
+    position: relative;
+    padding: 20px 40px;
+    gap: 50px;
 }
 
 form {
+    height: auto;
+    max-width: 70%;
     display: inline-block;
+    position: relative;
 }
 
 label {
-    text-align: left;
+    margin: 10px 0px 10px 0px;
+}
+
+.write-type {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    border-color: rgba(128, 128, 128, 0.538);
+}
+
+.descricao {
+    display: block;
+}
+
+.checkbox {
+    max-width: 25vw;
+    display: inline-block;
+}
+
+.box {
+    margin-left: 10px;
+}
+
+.radiobox {
+    margin: 10px 0px 10px 0px;
+}
+
+#upload {
+    background-color: gray;
+    color: white;
+    padding: 2px 25px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#upload {
+    background-color: gray;
+    color: white;
+    font-size: .8rem;
+    padding: 2px 25px;
+    cursor: pointer;
+    transition: .3s;
+    border: solid 1px gray;
+}
+
+#upload:hover {
+    background-color: white;
+    color: gray;
+    font-weight: 500;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    background-color: rgb(194, 24, 91);
+    font-size: 1rem;
+    font-weight: 700;
+    border: solid 1px rgb(194, 24, 91);
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 2px 0px;
+}
+
+a:hover {
+    background-color: white;
+    color: rgb(194, 24, 91);
 }
 
 #text-container {
-    border: solid 1px black;
     display: inline-block;
+    position: relative;
     height: auto;
     width: 38%;
     text-align: left;
@@ -105,7 +185,7 @@ label {
 #text-container > p{
     color: rgb(75, 74, 74);
     margin-bottom: 10px;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 400;
 }
 

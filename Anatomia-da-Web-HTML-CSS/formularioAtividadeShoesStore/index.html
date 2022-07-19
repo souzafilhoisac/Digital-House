@@ -24,65 +24,66 @@
     </header>
     <main>
         <h1>Faça parte do nosso time</h1>
-        <div id="form-container">
-            <form action="/trabalheConosco.html" method="post">
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="example@email.com" required>
-                </div>
-                <div>
-                    <label for="tel">Telefone</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Telefone">
-                </div>
-                <label for="departamentos">Departamentos</label>
-                <select name="departamentos" id="departamentos">
-                    <option selected disabled>Selecione</option>
-                    <option value="faturamento">Faturamento</option>
-                    <option value="financeiro">Financeiro</option>
-                    <option value="tecnologia">TI</option>
-                </select>
-                <label for="disponibilidade">Disponibilidade</label>
-                <div>
-                    <input type="checkbox" name="disponibilidade" id="integral" value="integral">
-                    <label for="integral">Integral (8h)</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="disponibilidade" id="meio-periodo" value="meio-periodo">
-                    <label for="meio-periodo">Meio período (4h)</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="disponibilidade" id="freelancer" value="freelancer">
-                    <label for="freelancer">Freelancer</label>
-                </div>
-                <div>
-                    <label>Qual a melhor forma de entrarmos em contato com você?</label>
-
-                    <input type="radio" name="contato" id="r-email" value="r-email">
-                    <label for="r-email">Email</label>
-
-                    <input type="radio" name="contato" id="r-ligacao" value="r-ligacao">
-                    <label for="r-ligacao">Ligação</label>
-
-                    <input type="radio" name="contato" id="r-whatsapp" value="r-whatsapp">
-                    <label for="r-whatsapp">Whatsapp</label>
-                </div>
-                <div>
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
-                </div>
-                <input type="file" name="arquivo" id="arquivo" placeholder="" accept=".pdf" multiple>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div id="text-container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, impedit reprehenderit quam sint maxime, error veniam et modi ea, minus eius minima sapiente voluptas harum. Fugiat quidem consectetur ipsam recusandae.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias saepe asperiores ipsa dicta, sit mollitia officiis exercitationem ex vitae, rem modi ducimus in ut quae itaque nihil? Minima, quisquam eum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure laboriosam ex in repellat quasi, quos, eveniet doloremque laudantium maiores non corporis id est voluptas tempora aperiam natus nulla rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium quo veniam esse quia quod pariatur, labore ullam fuga. Exercitationem amet magni vero? Exercitationem inventore architecto similique, eveniet aliquam nesciunt.</p>
-        </div>
+        <article>
+                <form action="/trabalheConosco" method="POST">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input class="write-type" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input class="write-type" type="email" name="email" id="email" placeholder="example@email.com" required>
+                    </div>
+                    <div>
+                        <label for="tel">Telefone</label>
+                        <input class="write-type" type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                    </div>
+                    <label for="departamentos">Departamentos</label>
+                    <select class="write-type" name="departamentos" id="departamentos" required>
+                        <option selected disabled></option>
+                        <option value="faturamento">Faturamento</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="tecnologia">TI</option>
+                    </select>
+                    <label class="descricao" for="disponibilidade">Disponibilidade</label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="disponibilidade" id="integral" value="integral">
+                        <label for="integral">Integral (8h)</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="box" type="checkbox" name="disponibilidade" id="meio-periodo" value="meio-periodo">
+                        <label for="meio-periodo">Meio período (4h)</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="box" type="checkbox" name="disponibilidade" id="freelancer" value="freelancer">
+                        <label for="freelancer">Freelancer</label>
+                    </div>
+                    <div class="radiobox">
+                        <label class="descricao">Qual a melhor forma de entrarmos em contato com você?</label>
+                        <input type="radio" name="contato" id="r-email" value="r-email">
+                        <label for="r-email">Email</label>
+                        <input class="box" type="radio" name="contato" id="r-ligacao" value="r-ligacao">
+                        <label for="r-ligacao">Ligação</label>
+                        <input class="box" type="radio" name="contato" id="r-whatsapp" value="r-whatsapp">
+                        <label for="r-whatsapp">Whatsapp</label>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="write-type" name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+                    </div>
+                    <div id="upcv">
+                        <label>Currículo</label>
+                        <label id="upload" for="arquivo">Upload</label>
+                        <input type="file" name="arquivo" id="arquivo" placeholder="" accept=".pdf, .jpg" multiple>
+                    </div>
+                    <button type="submit"><a href="trabalheConosco.html">Enviar</a></button>
+                </form>
+            <div id="text-container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, impedit reprehenderit quam sint maxime, error veniam et modi ea, minus eius minima sapiente voluptas harum. Fugiat quidem consectetur ipsam recusandae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias saepe asperiores ipsa dicta, sit mollitia officiis exercitationem ex vitae, rem modi ducimus in ut quae itaque nihil? Minima, quisquam eum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure laboriosam ex in repellat quasi, quos, eveniet doloremque laudantium maiores non corporis id est voluptas tempora aperiam natus nulla rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium quo veniam esse quia quod pariatur, labore ullam fuga. Exercitationem amet magni vero? Exercitationem inventore architecto similique, eveniet aliquam nesciunt.</p>
+            </div>
+        </article>
     </main>
     <footer>
         <div id="logo-bottom">
