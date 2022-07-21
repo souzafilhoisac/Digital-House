@@ -15,14 +15,8 @@ body {
 }
 
 header {
+    width: 100%;
     background-color: white;
-}
-
-#principal {
-    background-color: white;
-    height: 100%;
-    max-width: 800px;
-    margin: auto;
 }
 
 nav {
@@ -67,6 +61,18 @@ img {
     text-align: center;
 }
 
+#frete-gratis {
+    height: auto;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(194, 24, 91);
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 main {
     background-color: white;
 }
@@ -76,7 +82,7 @@ h1 {
     font-size: 1.6rem;
     font-weight: 500;
     width: 100%;
-    padding: 30px 40px 10px;
+    padding: 150px 40px 10px 40px;
 }
 
 article {
