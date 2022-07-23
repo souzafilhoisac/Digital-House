@@ -2,8 +2,16 @@ const express = require('express');
 const rotasProdutos = require('./rotas/rotasProdutos');
 let app = express();
 
+// Nesse exemplo da linha 11, a interrogação após o parâmetro 
+// deixa o mesmo como opcional, tornando possível acessar a 
+// rota mesmo sem passar uma id
+
 app.get('/', (req, res) => res.send("Olá mundo!"));
 app.get('/contatos', (req, res) => res.send("Página de contatos"));
+app.get('/produtos/:id?', (req, res) => {
+    let {id} = req.params;
+    res.send("Eu tenho um produto com o id: " + id)
+})
 
 app.get('/usuario', (req, res) => res.send("Teste para o usuario..."));
 app.post('/usuario', (req, res) => res.send('Teste para cadastro de usuário...'));
