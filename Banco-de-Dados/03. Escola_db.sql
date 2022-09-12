@@ -7,20 +7,20 @@ CREATE TABLE alunos (
   sobrenome varchar(200) NOT NULL,
   ano_matricula int NOT NULL,
   PRIMARY KEY (id)
-) CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+);
 
 CREATE TABLE professores (
   id int unsigned NOT NULL AUTO_INCREMENT,
   nome varchar(200) NOT NULL,
   sobrenome varchar(200) NOT NULL,
   PRIMARY KEY (id)
-) CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+);
 
 CREATE TABLE areas (
   id int unsigned NOT NULL AUTO_INCREMENT,
   tipo varchar(100) NOT NULL,
   PRIMARY KEY (id)
-) CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+);
 
 CREATE TABLE cursos (
   id int unsigned NOT NULL AUTO_INCREMENT,
@@ -28,7 +28,7 @@ CREATE TABLE cursos (
   area_id int unsigned NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY area_foreing (area_id) REFERENCES areas(id)
-) DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+);
 
 CREATE TABLE turmas (
   id int unsigned NOT NULL AUTO_INCREMENT,
@@ -40,7 +40,7 @@ CREATE TABLE turmas (
   PRIMARY KEY (id),
   FOREIGN KEY curso_foreing (curso_id) REFERENCES cursos(id),
   FOREIGN KEY professor_foreing (professor_id) REFERENCES professores(id)
-) DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+);
 
 CREATE TABLE alunos_has_turmas (
   id int unsigned NOT NULL AUTO_INCREMENT,
@@ -50,6 +50,28 @@ CREATE TABLE alunos_has_turmas (
   PRIMARY KEY (id),
   FOREIGN KEY aluno_foreing (aluno_id) REFERENCES alunos(id),
   FOREIGN KEY turma_foreing (turma_id) REFERENCES turmas(id)
-) DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+);
 
 SELECT nome, ano_matricula FROM alunos;
+
+USE escola;
+
+SELECT * FROM alunos;
+
+SELECT nome
+FROM alunos
+ORDER BY ano_matricula DESC
+LIMIT 3;
+
+SELECT nome
+FROM alunos
+WHERE ano_matricula = '2020'
+LIMIT 3;
+
+SELECT *
+FROM turmas
+WHERE ano_inicio BETWEEN '2018-01-01' AND '2020-12-31';
+
+SELECT *
+FROM cursos
+WHERE nome LIKE '%desenvolvimento%';
