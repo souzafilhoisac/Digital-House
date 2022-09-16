@@ -75,3 +75,25 @@ WHERE ano_inicio BETWEEN '2018-01-01' AND '2020-12-31';
 SELECT *
 FROM cursos
 WHERE nome LIKE '%desenvolvimento%';
+
+USE escola;
+
+SELECT * FROM alunos;
+
+SELECT alunos.nome, alunos_has_turmas.numero_faltas
+FROM alunos
+JOIN alunos_has_turmas
+ON alunos.id = alunos_has_turmas.aluno_id
+WHERE alunos_has_turmas.numero_faltas > 5
+ORDER BY alunos.nome;
+
+SELECT alunos.nome, alunos.sobrenome, alunos_has_turmas.numero_faltas
+FROM alunos
+JOIN alunos_has_turmas
+ON alunos.id = alunos_has_turmas.aluno_id
+WHERE alunos_has_turmas.numero_faltas >= 10;
+
+SELECT COUNT(ano_inicio) 
+FROM turmas
+WHERE ano_inicio = 2020;
+
