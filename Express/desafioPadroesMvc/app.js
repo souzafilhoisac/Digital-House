@@ -1,6 +1,6 @@
-const express = require('express');
-const main = require('./routers/main')
-const app = express();
+const Express = require('express');
+const main = require('./routers/mainRouter')
+const app = new Express();
 
 app.use('/', main)
 

@@ -1,6 +1,8 @@
+const path = require('path')
+
 const Home = {
     paginaInicial: (req, res) => {
-        res.send('../views/home.html')
+        res.sendFile(path.join(__dirname, '../views/home.html'))
     }
 }
 

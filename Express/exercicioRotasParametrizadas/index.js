@@ -1,5 +1,11 @@
-const express = require('express');
-const app = express();
+//const express = require('express');
+//const app = express();
+
+//Queremos que você crie uma rota que aponte para "/serie" e que ela, por sua vez, receba um número. 
+//Esse número vai representar a identificação da série que tentamos visualizar. 
+//Portanto, a rota deve retornar apenas a série que corresponde ao id que veio pelo parâmetro.
+//Um exemplo de como seria a rota: http://localhost/serie/3
+
 
 const series = [
     {
@@ -26,10 +32,3 @@ let serieFound = series.find((serie) => {
 //         }
 //     }
 // })
-
-
-// for(i = 0; i < series.length; i++) {
-//     if(series[i].id === id) {
-//         console.log(series[i].nome);
-//     }
-// }
