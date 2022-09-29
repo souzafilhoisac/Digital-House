@@ -24,11 +24,11 @@ let serieFound = series.find((serie) => {
 });
     console.log(serieFound);
 
-// app.get('/serie/:id', (req, res) => {
-//     let {id} = req.params;
-//     for(i = 0; i < series.length; i++) {
-//         if(series[i].id === id) {
-//             res.send(series[i].nome);
-//         }
-//     }
-// })
+/*app.get('/serie/:id', (req, res) => {
+    let id = Number(req.params.id);
+    let serieFound = series.find((serie) => {
+        return serie.id === id;
+    });
+        res.send(serieFound);
+    }
+)*/
