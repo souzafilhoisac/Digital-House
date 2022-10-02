@@ -17,18 +17,28 @@ const series = [
         nome: 'Um maluco no pedaço'
     }
 ]
-
-let id = 1;
+let error = "Ops, Serie não localizada"
+let id = 4;
 let serieFound = series.find((serie) => {
     return serie.id === id;
 });
-    console.log(serieFound);
+    if(!serieFound){
+        console.log(error)
+    }else {
+        console.log(serieFound);
+    }
 
 /*app.get('/serie/:id', (req, res) => {
     let id = Number(req.params.id);
     let serieFound = series.find((serie) => {
         return serie.id === id;
     });
-        res.send(serieFound);
+        if(!serieFound){
+            res
+            .status(404)
+            .json({Message:"Ops, Serie não localizada"})
+        } else {
+            res.send(serieFound);
+        }
     }
 )*/
